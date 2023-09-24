@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InserirActivity">
+
+    <RadioGroup
+
+        android:id="@+id/radio_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_carro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Carro" />
+
+        <RadioButton
+            android:id="@+id/radio_onibus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ônibus" />
+
+        <RadioButton
+            android:id="@+id/radio_caminhao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Caminhão" />
+
+    </RadioGroup>
+
+    <!-- ======================================================================================== -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/inputs_carro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_nome_do_carro"
+        android:inputType="text"
+        android:hint="Nome do carro"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_marca_do_carro"
+        android:layout_below="@id/edit_nome_do_carro"
+        android:inputType="text"
+        android:hint="Marca"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_completo_ou_basico"
+        android:textSize="16sp"
+        android:layout_below="@id/edit_marca_do_carro"
+        android:text="Completo ou básico?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radio_completo_ou_basico"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_completo_ou_basico"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_completo"
+                android:text="COMPLETO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/radio_basico"
+                android:text="BÁSICO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <!-- ======================================================================================== -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/inputs_onibus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_nome_do_onibus"
+            android:inputType="text"
+            android:hint="Nome do ônibus"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_marca_do_onibus"
+            android:layout_below="@id/edit_nome_do_onibus"
+            android:inputType="text"
+            android:hint="Marca"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_qtd_lugares"
+            android:layout_below="@id/edit_marca_do_onibus"
+            android:inputType="number"
+            android:hint="Quantidade de lugares"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_tem_banheiro"
+            android:textSize="16sp"
+            android:layout_below="@id/edit_qtd_lugares"
+            android:text="Tem banheiro?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radio_tem_banheiro"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_tem_banheiro"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_sim"
+                android:text="SIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/radio_nao"
+                android:text="NÃO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <!-- ======================================================================================== -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/inputs_caminhao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_nome_do_caminhao"
+            android:inputType="text"
+            android:hint="Nome do caminhão"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_marca_do_caminhao"
+            android:layout_below="@id/edit_nome_do_caminhao"
+            android:inputType="text"
+            android:hint="Marca"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_peso_suportado"
+            android:layout_below="@id/edit_marca_do_caminhao"
+            android:inputType="numberDecimal"
+            android:hint="Peso suportado"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

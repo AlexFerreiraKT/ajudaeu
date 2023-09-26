@@ -107,11 +107,11 @@
 
         <EditText
             android:id="@+id/edit_nome_do_onibus"
-            android:inputType="text"
-            android:hint="Nome do ônibus"
-            android:layout_centerInParent="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Nome do ônibus"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/edit_marca_do_onibus"
@@ -198,6 +198,16 @@
             android:layout_height="wrap_content"/>
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_inserir_inserir"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="INSERIR"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>

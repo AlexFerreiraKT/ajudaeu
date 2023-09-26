@@ -1,8 +1,3 @@
 package com.example.herancaalex
 
-class Onibus: Automovel() {
-
-    var qtsLugares = 0
-    var temBanheiro = false
-
-}
+class Onibus(nome: String, fabricante: String, var lugares: Int, var temBanheiro: Boolean) : Automovel(nome, fabricante)

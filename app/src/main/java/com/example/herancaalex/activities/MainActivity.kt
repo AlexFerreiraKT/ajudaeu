@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.herancaalex.Automovel
 import com.example.herancaalex.Carro
 import com.example.herancaalex.R
 import com.example.herancaalex.databinding.ActivityMainBinding
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonMostrar.setOnClickListener(this)
         binding.buttonRemover.setOnClickListener(this)
         binding.buttonAlterar.setOnClickListener(this)
+
+        val veiculos = mutableListOf<Automovel>()
+
 
         val carro = ArrayList<Carro>()
         carro.add(Carro("Celta", "Chevrolet", true))
